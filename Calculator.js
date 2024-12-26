@@ -8,11 +8,15 @@ function clearDisplay(){
     display.value = ""
 }
 
+function del(){
+    display.value 
+}
+
 function calculate(){
     try{
         display.value = eval(display.value)
     }
     catch(error){
-        display.value = "Kyu kar rha aisa ??"
+        display.value = "Error"
     }
 }

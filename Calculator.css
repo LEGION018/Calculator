@@ -17,6 +17,7 @@ html,body{
 #calculator{
     height: fit-content;
     width: fit-content;
+    position: relative;
     padding: 20px;
     overflow: hidden;
     background-color: rgb(20, 19, 19);
@@ -25,7 +26,8 @@ html,body{
 }
 
 #display{
-    background-color: rgb(39, 37, 37);
+    background-color:  rgb(20, 20, 20);
+    border: 3px solid rgb(10, 33, 97);
     font-size: 40px;
     color: white;
     display: flex;
@@ -33,6 +35,13 @@ html,body{
     justify-self: center;
     width: 100%;
     padding: 20px 05px;
+    border-radius: 50px;
+    text-align: right;
+}
+
+#display:active{
+    background-color:  hsl(0, 0%, 60%);
+    border: 1px solid hsl(0, 0%, 60%);
 }
 
 #keys{
@@ -66,4 +75,11 @@ button:active{
      background-color: rgb(19, 14, 14);
      color: rgb(41, 194, 74);
      font-weight: 900;
+}
+
+p{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: rgb(13, 250, 33);
 }
